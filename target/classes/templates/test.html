@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<!-- <html xmlns:th="http://www.thymeleaf.org"> -->
+<head>
+<title>hello</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<style type="text/css">
+img {
+	width: 100%;
+	height: 50%;
+}
+</style>
+<script type="text/javascript" src="/jslib/jquery-1.10.2.min.js"></script>
+
+</head>
+<body>
+	<!-- <span>tu</span> -->
+	<img id="id" src="" />
+	<button id="qh">切换</button>
+	<script type="text/javascript">
+		var id = "412722197809260015";
+		var path = "http://localhost:8080/coommon/pic_30?id=" + id + "&type=1"
+		console.log(path)
+		$("#id").attr("src", path);
+		$("#qh").click(function() {
+			id = "浙AB0N88";
+			path = "http://localhost:8080/coommon/pic_30?id=" + id + "&type=2"
+			$("#id").attr("src", path);
+		})
+	</script>
+</body>
+</html>
